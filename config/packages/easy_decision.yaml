@@ -1,0 +1,4 @@
+easy_decision:
+    type_mapping:
+        music_factory: App\Infrastructure\EasyDecision\Decision\AffirmativeDecision
+        music_ministry: App\Infrastructure\EasyDecision\Decision\AffirmativeDecision
