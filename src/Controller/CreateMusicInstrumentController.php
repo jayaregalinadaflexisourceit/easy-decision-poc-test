@@ -4,9 +4,7 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use App\Contract\Service\Music\MusicInstrumentFactoryContract;
-use App\Contract\Service\Music\MusicMinistryContract;
 use Symfony\Component\HttpFoundation\JsonResponse;
-use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Throwable;
@@ -16,7 +14,8 @@ use Throwable;
  */
 final class CreateMusicInstrumentController
 {
-    public function __invoke(MusicInstrumentFactoryContract $factory): Response {
+    public function __invoke(MusicInstrumentFactoryContract $factory): Response
+    {
         $instrumentRequests = [
             [
                 // This is a good instrument
